@@ -3,7 +3,9 @@ deploy:
   provider: releases
   api_key:
     secure: yHVe+ZkZfQ7epC0yGIDc0nJbnLeZkN7+Mw4EFr+HCW9Kjdy3Rn/kjLonUZVvDH1RhnKSoON0ZdhIbRku2ET0tDyoaLZ7WFoADNPvuKinVYDD0/fOz3zwuASmR/3LMOKzPmHbas8rtDOzGKpgyb9F4BG4JOAbx/O/DzSILyfQW3VoMTKDsEqU+J9koclsoViGoKT5n58scSNS6FHA429WVX1vdtNaKEZGsvSGSFnNAOZbxVyCOT11jv+zRB2TgA6W6kfnuEGYakzorxxiQME+Etu/51Cx+AUkXbHmQ9y+Rtt17V5rwxqOIbVk30uCvSgleBLXH8mYpaJFfbJYnQoX/O5Bhb1vE1vAgG+SgCFTNxVpCIvzaqw0jT7eUI59PvGK4sf+0u85uQHfY0qOxO0qRFfoAgfMqE837vzTDwu9+i3OdtW0sYOjCr82wI2cyu4BBCSxYwGaYfnqv7m1ZJN2wlVlyOjH0cUrBweYyTBeD4LB5HzLwf3Pyaz+VXN4N6eZJLls6lVCMcQcrwKw/fIZ0VC7Waw5ervS601GpQMqi1YLPHrVSDgtmSFnCI0rm1cJtzVrwAhinNjc5QFvCmU3WoaRatX7nr7kCLPefh3oIdkmchUwCCk7EWJxWzXVHe+XVjFCndyk07QNO2WMHHJE3AN9BQAYCtTrrXY4s1cxmLk=
-  file: server.xslt
+  file:
+    - "server.xslt"
+    - "context.xslt"
   on:
     tags: true
     repo: rehei/tomcat7-rehei-xslt
