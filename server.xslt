@@ -16,16 +16,10 @@
     <xsl:attribute name="{name()}"><xsl:value-of select="$port+1"/></xsl:attribute>
   </xsl:template>
   
-  <xsl:template match="//Server/Service/Connector[@protocol='AJP/1.3']/@port">
-    <xsl:attribute name="{name()}"><xsl:value-of select="$port+2"/></xsl:attribute>
-  </xsl:template>
-  
-  <xsl:template match="//Server/Service/Connector[@protocol='AJP/1.3']/@redirectPort">
-    <xsl:attribute name="{name()}"><xsl:value-of select="$port+3"/></xsl:attribute>
-  </xsl:template>
+  <xsl:template match="//Server/Service/Connector[@protocol='AJP/1.3']" />
   
   <xsl:template match="//Server/@port">
-    <xsl:attribute name="{name()}"><xsl:value-of select="$port+4"/></xsl:attribute>
+    <xsl:attribute name="{name()}"><xsl:value-of select="$port+2"/></xsl:attribute>
   </xsl:template>
 
 
